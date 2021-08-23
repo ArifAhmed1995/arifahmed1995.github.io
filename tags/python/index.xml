@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Arif Ahmed</title>
+    <link>https://arifahmed1995.github.io/tags/python/</link>
+    <description>Recent content in Python on Arif Ahmed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://arifahmed1995.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Summer of Code 2017 with SymPy</title>
+      <link>https://arifahmed1995.github.io/projects/contributions/gsoc17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/contributions/gsoc17/</guid>
+      <description>This project implemented a module in SymPy which provides the ability to integrate arbitrary polynomials over 2D, 3D polytopes. Using Generalized Stokes&amp;rsquo; Theorem and Euler&amp;rsquo;s Theorem the integration over a given polytope is reduced to integration over its faces and then edges. This technique avoids using a 3D quadrature which would otherwise be computationally expensive.</description>
+    </item>
+    
+  </channel>
+</rss>

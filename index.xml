@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Arif Ahmed</title>
+    <link>https://arifahmed1995.github.io/</link>
+    <description>Recent content in Home on Arif Ahmed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Aug 2020 18:05:13 -0500</lastBuildDate>
+    
+	<atom:link href="https://arifahmed1995.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Summer of Code 2017 with SymPy</title>
+      <link>https://arifahmed1995.github.io/projects/contributions/gsoc17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/contributions/gsoc17/</guid>
+      <description>This project implemented a module in SymPy which provides the ability to integrate arbitrary polynomials over 2D, 3D polytopes. Using Generalized Stokes&amp;rsquo; Theorem and Euler&amp;rsquo;s Theorem the integration over a given polytope is reduced to integration over its faces and then edges. This technique avoids using a 3D quadrature which would otherwise be computationally expensive.</description>
+    </item>
+    
+    <item>
+      <title>Google Summer of Code 2018 with CERN-HSF</title>
+      <link>https://arifahmed1995.github.io/projects/contributions/gsoc18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/contributions/gsoc18/</guid>
+      <description>Evaluated the dependencies of the TMath Functions already available in ROOT. Added a vectorized implementation of the ROOT::TMath functions in VecCore. Benchmarked performance in different architectures and instruction sets. Integrated the new VecCore implementations in ROOT and added benchmarks.
+Major Commit for ROOT
+Merged PR for ROOT benchmarks
+Minor Commits for VecCore</description>
+    </item>
+    
+    <item>
+      <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
+      <link>https://arifahmed1995.github.io/publications/alldaydevops/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/publications/alldaydevops/</guid>
+      <description>This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:
+ Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.</description>
+    </item>
+    
+    <item>
+      <title>Forcing Visits to use SSL</title>
+      <link>https://arifahmed1995.github.io/blog/force-ssl/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/blog/force-ssl/</guid>
+      <description>Intro Doesn&amp;rsquo;t matter whether it&amp;rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. If your passing around passwords or other sensitive info you should really implement SSL. SSL provides 2 main perks to your visitors.
+ First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets. Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &amp;lsquo;man in the middle&amp;rdquo; attack.</description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>https://arifahmed1995.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;] Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.</description>
+    </item>
+    
+  </channel>
+</rss>
