@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CNN on Arif Ahmed</title>
+    <link>https://arifahmed1995.github.io/tags/cnn/</link>
+    <description>Recent content in CNN on Arif Ahmed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Feb 2020 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://arifahmed1995.github.io/tags/cnn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Modeling non-linear audio effects with end-to-end deep neural networks</title>
+      <link>https://arifahmed1995.github.io/projects/creations/distortion_dnn/</link>
+      <pubDate>Tue, 11 Feb 2020 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/creations/distortion_dnn/</guid>
+      <description>Here is a link to the paper.
+The main aim of was to find a general purpose end-to-end deep neural network to perform modeling of nonlinear audio effects. I also found the usage of Soft Adaptive Activation Function(SAAF) quite interesting. Had never encountered an adaptive activation before and was curious about implementing it.
+The network consists of 1D convolutional filters to expand the input into multiple channels, then max pooling to extract out the most important aspects of the channel output.</description>
+    </item>
+    
+  </channel>
+</rss>

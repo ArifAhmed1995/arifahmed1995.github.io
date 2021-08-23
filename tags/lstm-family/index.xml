@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LSTM Family on Arif Ahmed</title>
+    <link>https://arifahmed1995.github.io/tags/lstm-family/</link>
+    <description>Recent content in LSTM Family on Arif Ahmed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Feb 2019 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://arifahmed1995.github.io/tags/lstm-family/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Music Generation using a Differentiable Neural Computer</title>
+      <link>https://arifahmed1995.github.io/projects/creations/music_dnc/</link>
+      <pubDate>Mon, 11 Feb 2019 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/creations/music_dnc/</guid>
+      <description>Here is a link to the paper.
+This was a formal project I did along with Sudeep Katakol in my last semester of college. We were trying to improve on PerformanceRNN. Wrestling around with the architecture, intermediate layers and/or removing and adding linkages to the memory bank, none of it seemed to work that well. We presented our findings and code so far and left the project to be continued by the upcoming batch of students.</description>
+    </item>
+    
+    <item>
+      <title>Study Project: Multi-Agent Diverse GANs</title>
+      <link>https://arifahmed1995.github.io/projects/creations/mad_gan/</link>
+      <pubDate>Mon, 11 Feb 2019 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/creations/mad_gan/</guid>
+      <description>Multi-Agents GANs are a simple modification of the original architecture. Instead of one generator, there are multiple ones and they provide for a realistic variance in output. Each of the generators eventually collapse to different peaks of the distribution to be learned. Detailed information can be found in the report.</description>
+    </item>
+    
+  </channel>
+</rss>

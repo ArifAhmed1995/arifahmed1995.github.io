@@ -43,6 +43,47 @@ Minor Commits for VecCore</description>
     </item>
     
     <item>
+      <title>Modeling non-linear audio effects with end-to-end deep neural networks</title>
+      <link>https://arifahmed1995.github.io/projects/creations/distortion_dnn/</link>
+      <pubDate>Tue, 11 Feb 2020 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/creations/distortion_dnn/</guid>
+      <description>Here is a link to the paper.
+The main aim of was to find a general purpose end-to-end deep neural network to perform modeling of nonlinear audio effects. I also found the usage of Soft Adaptive Activation Function(SAAF) quite interesting. Had never encountered an adaptive activation before and was curious about implementing it.
+The network consists of 1D convolutional filters to expand the input into multiple channels, then max pooling to extract out the most important aspects of the channel output.</description>
+    </item>
+    
+    <item>
+      <title>Spectral-Spatial Classification of Hyperspectral Images</title>
+      <link>https://arifahmed1995.github.io/projects/creations/hyperspectral/</link>
+      <pubDate>Tue, 11 Feb 2020 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/creations/hyperspectral/</guid>
+      <description>Here is a link to the paper.
+I primarily did this project to implement an image processing algorithm from scratch. OpenCV does not have the implementation of Edge-Preserving filter for more than three channels when I did this project.
+Independent Components Analysis(ICA) is first performed across the channels to separate out the information present in the image. Gaussian Filter is applied, this process is referred to as small structure removal in the algorithm.</description>
+    </item>
+    
+    <item>
+      <title>Music Generation using a Differentiable Neural Computer</title>
+      <link>https://arifahmed1995.github.io/projects/creations/music_dnc/</link>
+      <pubDate>Mon, 11 Feb 2019 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/creations/music_dnc/</guid>
+      <description>Here is a link to the paper.
+This was a formal project I did along with Sudeep Katakol in my last semester of college. We were trying to improve on PerformanceRNN. Wrestling around with the architecture, intermediate layers and/or removing and adding linkages to the memory bank, none of it seemed to work that well. We presented our findings and code so far and left the project to be continued by the upcoming batch of students.</description>
+    </item>
+    
+    <item>
+      <title>Study Project: Multi-Agent Diverse GANs</title>
+      <link>https://arifahmed1995.github.io/projects/creations/mad_gan/</link>
+      <pubDate>Mon, 11 Feb 2019 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/projects/creations/mad_gan/</guid>
+      <description>Multi-Agents GANs are a simple modification of the original architecture. Instead of one generator, there are multiple ones and they provide for a realistic variance in output. Each of the generators eventually collapse to different peaks of the distribution to be learned. Detailed information can be found in the report.</description>
+    </item>
+    
+    <item>
       <title>Forcing Visits to use SSL</title>
       <link>https://arifahmed1995.github.io/blog/force-ssl/</link>
       <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>

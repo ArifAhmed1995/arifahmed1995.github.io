@@ -6,10 +6,64 @@
     <description>Recent content in Tags on Arif Ahmed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 12:41:05 -0500</lastBuildDate>
     
 	<atom:link href="https://arifahmed1995.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CNN</title>
+      <link>https://arifahmed1995.github.io/tags/cnn/</link>
+      <pubDate>Tue, 11 Feb 2020 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/tags/cnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://arifahmed1995.github.io/tags/deep-learning/</link>
+      <pubDate>Tue, 11 Feb 2020 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Processing</title>
+      <link>https://arifahmed1995.github.io/tags/image-processing/</link>
+      <pubDate>Tue, 11 Feb 2020 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/tags/image-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PyTorch</title>
+      <link>https://arifahmed1995.github.io/tags/pytorch/</link>
+      <pubDate>Tue, 11 Feb 2020 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Variable Convolution Filter</title>
+      <link>https://arifahmed1995.github.io/tags/variable-convolution-filter/</link>
+      <pubDate>Tue, 11 Feb 2020 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/tags/variable-convolution-filter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LSTM Family</title>
+      <link>https://arifahmed1995.github.io/tags/lstm-family/</link>
+      <pubDate>Mon, 11 Feb 2019 12:41:05 -0500</pubDate>
+      
+      <guid>https://arifahmed1995.github.io/tags/lstm-family/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>agile</title>
