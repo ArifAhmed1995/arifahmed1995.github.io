@@ -64,12 +64,10 @@
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
     <h2 class="mb-3"><span class="text-primary">Modeling non-linear audio effects with end-to-end deep neural networks</span></h2>
-    <p>Here is a <a href="https://www.eecs.qmul.ac.uk/~josh/documents/2019/08683529.pdf">link</a> to the paper.</p>
+    <p>Here is a <a href="https://www.eecs.qmul.ac.uk/~josh/documents/2019/08683529.pdf">link</a> to the original paper.</p>
 <p>The main aim of was to find a general purpose end-to-end deep neural network to perform modeling of nonlinear audio effects. I also found the usage of Soft Adaptive Activation Function(SAAF) quite interesting. Had never encountered an adaptive activation before and was curious about implementing it.</p>
 <p>The network consists of 1D convolutional filters to expand the input into multiple channels, then max pooling to extract out the most important aspects of the
 channel output. After that it is passed through a couple of densely connected layers, upsampled, some more dense layers, one SAAF layer and then finally de-convolution layer to yield the final output.</p>
-<p>Unfortunately I lacked the resources to fully train the network. The best one at my disposal is Colab Free, but the recent usage limits make it tricky to train to completion. The notebook in the repository saves the model and optimizer params after every epoch and a backup after 10 epochs or so. But even then it would take quite a long time to train the model.</p>
-<p>Nevertheless, my main curiosity was to understand and implement the SAAF layer.</p>
     <p><a href="https://github.com/ArifAhmed1995/distortion-dnn/tree/simpler_arch?tab=readme-ov-file">[Project link]</a></p>
     <ul class="tags">
       <li><a class="tag" href="/tags/deep-learning">Deep Learning</a></li>
