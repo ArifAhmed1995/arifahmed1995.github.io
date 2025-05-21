@@ -1,71 +1,136 @@
+/* Global Reset & Defaults
+-------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* More intuitive box model */
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+  font-size: 16px; /* Base font size for rem calculations, ensures accessibility */
+}
+
 body {
-  font-family: 'Open Sans', serif;
-  padding-top: 54px;
-  color: #868e96;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; /* Standard weight for body text is more readable than light weights */
+  line-height: 1.65; /* Increased line height for better text flow */
+  padding-top: 54px; /* For fixed top nav on small screens */
+  color: #5a6268; /* A slightly softer dark gray for body text */
+  background-color: #fdfdff; /* A very light, almost white background */
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 16rem; /* Slightly reduced sidebar width for more content space */
   }
 }
 
+/* Typography
+-------------------------------------------------------------- */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
-  color: #343a40;
-}
-
-
-h1, h2{
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Increased base weight for headings for better impact */
+  color: #343a40; /* Original dark heading color */
+  margin-top: 0;
+  margin-bottom: 0.75em; /* Consistent bottom margin */
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 3.5rem; /* Slightly reduced for better balance on various screens */
+  line-height: 1.2; /* Adjusted line height */
+  font-weight: 700; /* Bolder for the main page title */
+  letter-spacing: -0.5px; /* Subtle letter spacing for H1 */
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.25rem; /* Adjusted for hierarchy */
+  font-weight: 600;
+  margin-bottom: 1rem; /* More space after H2 */
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 500; /* Slightly less weight for smaller headings */
+}
+
+h5 {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Increased from 200 for better visibility and balance */
+  font-size: 1.2rem; /* Adjusted size */
+  color: #6c757d; /* Softer color for subheadings */
+  margin-bottom: 2rem; /* More space below subheading */
+  text-transform: none !important; /* Kept from your original CSS */
 }
 
-.list-social-icons a {
-  color: #495057;
+/* Links & Interactive Elements
+-------------------------------------------------------------- */
+a {
+  color: #2A5298; /* NEW: Primary Dark Blue */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
 }
 
-.list-social-icons a:hover {
-  color: #BD5D38;
+a:hover,
+a:focus {
+  color: #1E3A6D; /* NEW: Darker Shade for interaction */
+  text-decoration: underline;
 }
 
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
+a:active {
+  color: #172C4F; /* NEW: Even darker shade for active state */
 }
 
-.list-icons {
-  font-size: 3rem;
-}
 
-.list-icons .list-inline-item i:hover {
-  color: #BD5D38;
+/* Side Navigation (#sideNav)
+-------------------------------------------------------------- */
+#sideNav {
+  background-color: #343a40; /* Dark background for sidebar provides good contrast */
+  color: #f8f9fa; /* Light text for dark background */
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 500; /* Clear, readable weight for nav items */
+  font-size: 1.05rem; /* Slightly larger nav links */
+  color: rgba(255, 255, 255, 0.7); /* Softer white for nav links */
+  padding: 0.8rem 1.25rem; /* Adjusted padding for better spacing */
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-left: 3px solid transparent; /* For active indicator */
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle hover background */
+  border-left-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Assuming you might add an 'active' class via JavaScript for the current section */
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: #ffffff;
   font-weight: 600;
-  text-transform: uppercase;
+  background-color: rgba(42, 82, 152, 0.2); /* NEW: Subtle shade of primary dark blue for active bg */
+  border-left-color: #2A5298;                 /* NEW: Primary Dark Blue as active indicator */
 }
 
 @media (min-width: 992px) {
@@ -76,76 +141,295 @@ h2 {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 16rem; /* Retained slightly reduced width */
     height: 100vh;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
+    flex-direction: column; /* Stack image and name if text is added */
+    align-items: center;
+    margin: auto auto 1.5rem; /* Adjusted margin */
+    padding: 1rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    max-width: 9rem; /* Slightly smaller profile image */
+    max-height: 9rem;
+    border: 0.4rem solid rgba(255, 255, 255, 0.25); /* Slightly thicker border */
+    border-radius: 50%; /* Make profile image circular - a common modern touch */
+    object-fit: cover; /* Ensure image fills the circle well */
+    margin-bottom: 0.75rem; /* Space between image and potential name/title */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Shadow for profile image for pop */
   }
   #sideNav .navbar-collapse {
     display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
+    align-items: center; /* Center nav items vertically if there's extra space */
+    flex-grow: 1; /* Allow collapse to take available space */
     width: 100%;
-    margin-bottom: auto;
+    margin-bottom: auto; /* Pushes nav items up if not enough to fill height */
+    justify-content: center; /* Center the navbar-nav block itself */
   }
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
     width: 100%;
+    text-align: left; /* Align nav text to the left for readability */
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+    padding: 0.85rem 1.5rem; /* Adjust padding for left alignment */
   }
 }
 
+/* Content Sections (section.resume-section)
+-------------------------------------------------------------- */
 section.resume-section {
-  border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  border-bottom: 1px solid #e9ecef; /* Slightly softer border color */
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+  background-color: #ffffff; /* Clear white background for content sections */
+  margin-left: 1rem; /* Small margin if body has padding-left already */
+  margin-right: 1rem;
+  margin-bottom: 2rem; /* Space between sections */
+  border-radius: 8px; /* Rounded corners for sections */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07); /* Softer, more diffused shadow for depth */
+  overflow: hidden; /* Ensures box shadow and border radius work well together */
+}
+
+section.resume-section:first-of-type {
+    margin-top: 2rem; /* Add margin to the first section as well on large screens */
+}
+
+
+section.resume-section:last-of-type {
+  border-bottom: none; /* No border on the last section */
+  margin-bottom: 2rem; /* Consistent bottom margin */
 }
 
 section.resume-section .resume-item .resume-date {
-  min-width: none;
+  min-width: auto;
+  color: #2A5298; /* NEW: Primary Dark Blue for dates */
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: auto; /* Removed 100vh for natural content flow */
   }
   section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
+    min-width: 16rem; /* Original value, can be adjusted based on actual content */
+    display: inline-block; /* Allow it to sit beside content again */
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 992px) {
   section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 4.5rem !important; /* Slightly more padding for larger screens */
+    padding-bottom: 4.5rem !important;
+    margin-left: 0; /* Remove side margins when sidebar is present */
+    margin-right: 0;
+  }
+   section.resume-section:first-of-type {
+    margin-top: 0; /* No top margin for first section if sidebar is there */
   }
 }
 
+/* Social & List Icons
+-------------------------------------------------------------- */
+.list-social-icons a {
+  color: #495057; /* Original color */
+  width: 2.75rem; /* Define fixed size */
+  height: 2.75rem;
+  display: inline-flex; /* Use flex to center icon */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ced4da; /* Standard border color */
+  border-radius: 50%; /* Make them circular */
+  margin: 0 0.3rem;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+  background-color: #fff; /* Ensure background is white */
+}
+
+.list-social-icons a:hover {
+  color: #fff;
+  background-color: #2A5298; /* NEW: Primary Dark Blue background on hover */
+  border-color: #2A5298;   /* NEW: Primary Dark Blue border on hover */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 8px rgba(42, 82, 152, 0.3); /* NEW: Shadow color adjusted to blue */
+}
+
+.list-social-icons a .fa-lg {
+  font-size: 1.3rem; /* Adjusted icon size */
+}
+
+.list-icons {
+  font-size: 2.75rem; /* Adjusted if 3rem is too large */
+  padding-left: 0;
+  list-style: none;
+  display: flex; /* For alignment if needed */
+  flex-wrap: wrap; /* Allow icons to wrap */
+}
+
+.list-icons .list-inline-item {
+  margin: 0.5rem; /* Spacing around each icon item */
+}
+
+.list-icons .list-inline-item i {
+  color: #343a40; /* Darker icon color for better visibility */
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  padding: 0.5rem; /* Add some padding to make them easier to click */
+  display: inline-block; /* For transform to work */
+}
+
+.list-icons .list-inline-item i:hover {
+  color: #2A5298; /* NEW: Primary Dark Blue for icon hover */
+}
+
+/* Utility Classes (from original, kept for compatibility, ensure they don't clash with new styles)
+-------------------------------------------------------------- */
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #0047c3 !important; /* NEW: Primary Dark Blue */
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #003ea9 !important; /* NEW: Primary Dark Blue */
 }
 
-a {
-  color: #BD5D38;
+/* Projects & Open Source Section Enhancements
+-------------------------------------------------------------- */
+.project-item {
+  background-color: #fdfdff; /* Slightly off-white if sections are pure white, or match section bg */
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e9ecef; /* Consistent border */
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-a:hover, a:focus, a:active {
-  color: #824027;
+.project-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-color: #d1d9e0;
 }
+
+.project-item h3 a {
+  color: #343a40; /* Heading color for project titles */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-item h3 a:hover {
+  color: #2A5298; /* Primary blue on hover */
+  text-decoration: none;
+}
+
+.project-image-container {
+  flex-shrink: 0; /* Prevent image container from shrinking */
+  width: 180px; /* Define a fixed width for consistency */
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  background-color: #f8f9fa; /* Placeholder bg color if image is transparent or loading */
+}
+
+.project-details {
+  flex-grow: 1;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #5a6268;
+  margin-bottom: 0.75rem;
+}
+
+.read-more-link {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.project-tags .tags {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0; /* Remove default ul margin */
+}
+
+.project-tags .tag {
+  display: inline-block;
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 0.3rem 0.75rem;
+  margin: 0.2rem;
+  border-radius: 15px; /* Pill shape */
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-tags .tag:hover {
+  background-color: #2A5298; /* Primary blue */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main section titles for Projects/Open Source if they are links */
+#projects > div > div > h2 a,
+#open > div > div > h2 a {
+    text-decoration: none;
+    color: #343a40;
+    transition: color 0.2s ease;
+}
+#projects > div > div > h2 a:hover,
+#open > div > div > h2 a:hover {
+    color: #2A5298;
+    text-decoration: none;
+}
+
+/* Tag List Styling (Project & Open Source Sections)
+-------------------------------------------------------------- */
+ul.tags {
+  list-style-type: none; /* This removes the dot */
+  padding-right: 1;       /* This removes the default left padding for the dot */
+  margin-top: 0.5rem;      /* Add some top margin if it's directly after other content */
+  margin-bottom: 0;      /* Ensures no extra bottom margin from the ul itself */
+  line-height: 1;        /* Can help with consistent vertical alignment of lines of tags */
+}
+
+/* Ensure individual list items are spaced correctly.
+   Bootstrap's list-inline-item already provides display: inline-block and some margin.
+   If more control is needed: */
+ul.tags li.list-inline-item {
+  margin-bottom: 0.4rem; /* Adds a little vertical space if tags wrap to multiple lines */
+  vertical-align: middle; /* Helps align tags if they have slightly different heights due to text */
+}
+
+/* Styling for the <a> tag itself (ensure the selector is general enough if .project-tags is not used) */
+a.tag { /* Changed selector to be more general */
+  display: inline-block;
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 0.4em 1.8em; /* Using 'em' can help with scalability */
+  margin: 0.2em;
+  border-radius: 15px; /* Pill shape */
+  font-size: 0.8rem;   /* Slightly increased for better readability */
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  line-height: 1.2; /* Ensure text within the tag is well-aligned */
+}
+
+a.tag:hover {
+  background-color: #2A5298; /* Primary blue from your theme */
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px); /* Subtle lift */
+}
+/* Removing the final trailing brace if it was an error in the original file structure */
